@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Toán 1 Cùng Minh An 🌸</title>
+    <meta name="description" content="Ứng dụng học Toán lớp 1 trực quan, sinh động và vui nhộn dành riêng cho bé Minh An." />
+    <script>
+      // Safeguard against environment scripts/polyfills assigning to window.fetch
+      try {
+        let currentFetch = window.fetch ? window.fetch.bind(window) : null;
+        Object.defineProperty(window, 'fetch', {
+          get() {
+            return currentFetch;
+          },
+          set(newFetch) {
+            currentFetch = newFetch;
+          },
+          configurable: true,
+          enumerable: true,
+        });
+      } catch (err) {
+        // Ignore if environment forbids descriptor redefinition
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-['Quicksand',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+  "name": "Toán 1 Cùng Minh An",
+  "description": "Ứng dụng học Toán lớp 1 trực quan, sinh động và vui nhộn thiết kế riêng cho bé Minh An với trợ lý AI và linh vật đồng hành.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
